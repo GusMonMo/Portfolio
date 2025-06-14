@@ -1,5 +1,5 @@
 import Button from "./Components/Button"
-import Project from "./Components/Project"
+// import Project from "./Components/Project"
 import CssIcon from "./Assets/CssIcon.png"
 import ExpressIcon from "./Assets/ExpressIcon.png"
 import JavascriptIcon from "./Assets/JavaScriptIcon.png"
