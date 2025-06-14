@@ -1,33 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <header>
+        Inicio Contato Projetos Currículo
+      </header>
+      <div className="capa">
+        <div className="background"/>
+        <h2>Olá, seja bem vindo ao meu portfolio</h2>
+        <h1>Meu nome é Gustavo Monteiro</h1>
+        <h3>Sou desenvolvedor full-stack</h3>
+        <nav>
+          <div className="barra nav"/>
+          <a href="https://github.com/GusMonMo" target="_blank" rel="noopener noreferrer">
+            <img src="/Assets/GithubIcon.png" alt="Github" className="icon"/>
+          </a>
+           <a href="https://www.instagram.com/gusta.m_m/" target="_blank" rel="noopener noreferrer">
+            <img src="/Assets/IconInstagram.png" alt="Instagram" className="icon"/>
+          </a>
+           <a href="https://www.linkedin.com/in/devgus/" target="_blank" rel="noopener noreferrer">
+            <img src="/Assets/LinkedinIcon.png" alt="Linkedin" className="icon"/>
+          </a>
+           <a href="" target="_blank" rel="noopener noreferrer">
+            <img src="/Assets/mail-vector.png" alt="Email" className="icon"/>
+          </a>
+           <div className="barra nav"/>
+        </nav>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
