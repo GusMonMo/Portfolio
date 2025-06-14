@@ -1,10 +1,19 @@
+import Button from "./Components/Button"
+import Project from "./Components/Project"
+import CssIcon from "./Assets/CssIcon.png"
+import ExpressIcon from "./Assets/ExpressIcon.png"
+import JavascriptIcon from "./Assets/JavaScriptIcon.png"
+import MySqlIcon from "./Assets/MySqlcon.png"
+import ReactIcon from "./Assets/ReactIcon.png"
+import SassIcon from "./Assets/SassIcon.png"
+import NodeIcon from "./Assets/NodeIcon.png"
+import TypescriptIcon from "./Assets/TypeScriptIcon.png"
 
 function App() {
 
   return (
     <>
       <header>
-        
       </header>
       <div className="capa">
         <div className="background"/>
@@ -22,16 +31,13 @@ function App() {
            <a href="https://www.linkedin.com/in/devgus/" target="_blank" rel="noopener noreferrer">
             <img src="/Assets/LinkedinIcon.png" alt="Linkedin" className="icon"/>
           </a>
-           <a href="" target="_blank" rel="noopener noreferrer">
-            <img src="/Assets/mail-vector.png" alt="Email" className="icon"/>
-          </a>
            <div className="barra nav"/>
         </nav>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
         <div className="barra central"/>
       </div>
-      <section>
+      <section id="aboutMe">
         <h2>QUEM SOU EU ?</h2>
         <div className="barra section"/> <br />
         <p>
@@ -44,8 +50,22 @@ function App() {
           Atualmente estudo, além das tecnologias acima, NodeJS, Express e MySQL para ir além na minha stack.
         </p>
       </section>
-      <main>
-
+        <div className="buttonContainer">
+          <Button iconSrc= {CssIcon} skillName="CSS"/>
+          <Button iconSrc= {SassIcon} skillName="SASS"/>
+          <Button iconSrc= {JavascriptIcon} skillName="JavaScript"/>
+          <Button iconSrc= {ReactIcon} skillName="React"/>
+          <Button iconSrc= {TypescriptIcon} skillName="TypeScript"/>
+          <Button iconSrc= {NodeIcon} skillName="NodeJS"/>
+          <Button iconSrc= {ExpressIcon} skillName="Express"/>
+          <Button iconSrc= {MySqlIcon} skillName="MySQL"/>
+        </div>
+      <main id="Projects">
+        <h2>VEJA ALGUNS DOS MEUS PROJETOS ABAIXO</h2>
+        <div className="barra main"/>
+        <div className="projContainer">
+          {/* <Project projName="Linktree" projLink="google.com" usedTechs={["React", "TypeScript", "Sass"]}/> */}
+        </div>
       </main>
     </>
   )

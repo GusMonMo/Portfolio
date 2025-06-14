@@ -1,0 +1,35 @@
+@use '../Styles/variables' as *;
+
+.projSpace{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 25vw;
+    height: 20vw;
+    background-color: $backgroundWeak;
+    border-radius: 5vw;
+    border-color: $primaryColor;
+}
+
+.projName{
+    color: white;
+    font-size: 3vw;
+}
+
+.projLink{
+    color: $secondaryColor;
+    font-size: 1.5vw;
+}
+h4{
+    font-size: 1.5vw;
+}
