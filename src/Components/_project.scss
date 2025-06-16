@@ -7,6 +7,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+     @media (max-width: $break-mobile) {
+        margin-top: 10vw;
+        flex-direction: row;
+        gap: 3vw;
+    }
 }
 
 .imgCover{
@@ -17,19 +22,28 @@
     width: 25vw;
     height: 20vw;
     background-color: $backgroundWeak;
-    border-radius: 5vw;
+    border-radius: 20%;
     border-color: $primaryColor;
+    @media (max-width: $break-mobile) {
+        width: 40vw;
+        height: 35vw;
+    }
 }
 
 .projName{
     color: white;
     font-size: 3vw;
+     @media (max-width: $break-mobile) {
+        font-size: 7vw;
+    }
 }
 
 .projLink{
     color: $secondaryColor;
-    font-size: 1.5vw;
 }
-h4{
+h4, .projLink{
     font-size: 1.5vw;
+     @media (max-width: $break-mobile) {
+        font-size: 5vw;
+    }
 }

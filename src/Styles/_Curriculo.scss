@@ -1,0 +1,8 @@
+.curriculumBody{
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.curriculumBody > h1{
+    align-self: center;
+}

@@ -31,19 +31,22 @@ flex-direction: row;
 align-items: center;
 justify-content:end;
 gap: 1vw;
+@media(max-width: $break-mobile){
+  display: none;
+}
 }
 
 a{
   text-decoration: none;
-  
 }
 
-a > h4{
+h5{
   color: black;
   transition: transform 0.2s ease-in-out;
+  font-size: 2.1vw;
 }
 
-a > h4:hover{
+h5:hover{
   color: $primaryColor;
   transform: scale(1.1);
 }
@@ -51,7 +54,8 @@ a > h4:hover{
 height: 2.4vw;
 width: 0.2vw;
 background-color: black;
-margin-right: 1vw;
+margin-right: 0.5vw;
+margin-left: 0.5vw;
 }
 
 .capa{
@@ -66,21 +70,34 @@ margin-right: 1vw;
   z-index: 1;
   background: linear-gradient(0deg, $backgroundMedium, $backgroundWeak);
   opacity: 1;
+  @media (max-width: $break-mobile){
+    height: 75dvh;
+  }
 }
 
 h1, h2, h3, h4{
   color: white;
   font-size: 2.1vw;
   padding: 0.2vw;
+  @media (max-width: $break-mobile){
+    font-size: 5.5vw;
+    padding: 1vw;
+  }
 }
 
 h1{
   font-size: 2.6vw;
+  @media (max-width: $break-mobile){
+    font-size: 6.5vw;
+  }
 }
 
 p{
   color: white;
   font-size: 1.8vw;
+  @media(max-width: $break-mobile){
+    font-size: 5.1vw;
+  }
 }
 
 .background{
@@ -93,6 +110,13 @@ p{
   height: 70vw;
   z-index: 0;
   opacity: 0.1;
+  @media (max-width: $break-mobile){
+    background-size:245%;
+    background-position-x: 40%;
+    background-position-y: 0;
+    height: 75dvh;
+    width: 100%;
+  }
 }
 
 .capa > nav{
@@ -103,12 +127,19 @@ p{
   justify-content: center;
   align-items: center;
   gap: 2vw;
+  @media (max-width: $break-mobile) {
+   gap: 8vw;
+  }
 }
 
 .icon{
   object-fit: contain;
   width: 3vw;
   transition: transform 0.2s ease-in-out;
+   @media (max-width: $break-mobile) {
+    width: 12vw;
+    margin-top: 10vw;
+  }
 }
 
 .icon:hover{
@@ -118,10 +149,18 @@ p{
 .barra{
 height: 0.2vw;
 background-color: $primaryColor;
+@media (max-width: $break-mobile) {
+    height: 1vw;
+    
+  }
 }
 
 .nav{
 width: 3vw;
+  @media (max-width: $break-mobile) {
+    width: 8vw;
+    margin-top: 10vw;
+  }
 }
 
 .central{
@@ -141,6 +180,9 @@ section{
 
 .section{
   width: 16.5vw;
+  @media(max-width: $break-mobile){
+    width: 46vw;
+  }
 }
 
 .buttonContainer{
@@ -150,6 +192,16 @@ section{
   margin-top: 2vw;
   gap: 1vw;
   flex-direction: row;
+  @media (max-width: $break-mobile) {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+    
+  }
 }
 
 main{
@@ -161,6 +213,10 @@ main{
 
 .main{
   width: 46.7vw;
+  @media (max-width: $break-mobile) {
+    width: 80vw;
+    
+  }
 }
 
 .projContainer{
@@ -170,4 +226,11 @@ main{
   justify-content: center;
   align-items: center;
   gap: 3vw;
+  margin-bottom: 5vw;
+  @media (max-width: $break-mobile) {
+    flex-direction: column;
+    gap: 5vw;
+    margin-bottom: 15vw;
+  }
 }
+
