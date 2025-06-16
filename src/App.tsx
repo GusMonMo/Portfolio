@@ -21,8 +21,8 @@ function App() {
         <div className="headerSeparator"/>
         <nav><a href="#Projects"><h4>Meus Projetos</h4></a></nav>
         <div className="headerSeparator"/>
-        <nav><a href="#"><h4>Currículo</h4></a></nav>
-        <div className="headerSeparator"/>
+        {/* <nav><a href="#"><h4>Currículo</h4></a></nav>
+        <div className="headerSeparator"/> */}
       </header>
       <div className="capa" id="inicio">
         <div className="background"/>
