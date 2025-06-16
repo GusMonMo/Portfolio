@@ -14,8 +14,17 @@ function App() {
   return (
     <>
       <header>
+        <div className="headerSeparator"/>
+        <nav><a href="#inicio"><h4>Inicio</h4></a></nav>
+        <div className="headerSeparator"/>
+        <nav><a href="#aboutMe"><h4>Sobre Mim</h4></a></nav>
+        <div className="headerSeparator"/>
+        <nav><a href="#Projects"><h4>Meus Projetos</h4></a></nav>
+        <div className="headerSeparator"/>
+        <nav><a href="#"><h4>Currículo</h4></a></nav>
+        <div className="headerSeparator"/>
       </header>
-      <div className="capa">
+      <div className="capa" id="inicio">
         <div className="background"/>
         <h2>Olá, seja bem vindo ao meu portfolio</h2>
         <h1>Meu nome é Gustavo Monteiro</h1>
