@@ -44,12 +44,15 @@ h5{
   color: black;
   transition: transform 0.2s ease-in-out;
   font-size: 2.1vw;
+  &:hover{
+    color: $primaryColor;
+    transform: scale(1.1);
+  }
+  &:active{
+    transform: scale(0.9);
+  }
 }
 
-h5:hover{
-  color: $primaryColor;
-  transform: scale(1.1);
-}
 .headerSeparator{
 height: 2.4vw;
 width: 0.2vw;
@@ -70,6 +73,19 @@ margin-left: 0.5vw;
   z-index: 1;
   background: linear-gradient(0deg, $backgroundMedium, $backgroundWeak);
   opacity: 1;
+  & > nav{
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  z-index: 3;
+  @media (max-width: $break-mobile) {
+   gap: 8vw;
+  }
+}
   @media (max-width: $break-mobile){
     height: 75dvh;
   }
@@ -110,6 +126,7 @@ p{
   height: 70vw;
   z-index: 0;
   opacity: 0.1;
+  pointer-events: none;
   @media (max-width: $break-mobile){
     background-size:245%;
     background-position-x: 40%;
@@ -119,31 +136,21 @@ p{
   }
 }
 
-.capa > nav{
-  padding: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-  @media (max-width: $break-mobile) {
-   gap: 8vw;
-  }
-}
-
 .icon{
   object-fit: contain;
   width: 3vw;
   transition: transform 0.2s ease-in-out;
+  z-index: 5;
+  &:hover{
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
    @media (max-width: $break-mobile) {
     width: 12vw;
     margin-top: 10vw;
   }
-}
-
-.icon:hover{
- transform: scale(1.2);
 }
 
 .barra{
