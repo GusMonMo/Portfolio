@@ -31,9 +31,9 @@ flex-direction: row;
 align-items: center;
 justify-content:end;
 gap: 1vw;
-@media(max-width: $break-mobile){
-  display: none;
-}
+// @media(max-width: $break-mobile){
+//   display: none;
+// }
 }
 
 a{
