@@ -34,11 +34,7 @@ align-items: center;
 justify-content:end;
 gap: 1vw;
 @media(max-width: $break-mobile){
-  // position: fixed;
-  // top: auto;
-  // bottom: 0;
-  // height: 10vw;
-  display: none;
+  height: 15dvh;
 }
 }
 
@@ -83,22 +79,24 @@ margin-left: 0.5vw;
   background-color: $backgroundMedium;
   transition: background-color 0.5s ease;
   opacity: 1;
-  & > nav{
-  padding: 1vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-  z-index: 3;
-  transition: background-color 0.5s ease;
-  @media (max-width: $break-mobile) {
-   gap: 8vw;
+    & > nav{
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    z-index: 3;
+    transition: background-color 0.5s ease;
+    @media (max-width: $break-mobile) {
+    gap: 8vw;
+    } 
   }
-}
+
   @media (max-width: $break-mobile){
     height: 75dvh;
+    text-align: center;
   }
 }
 
@@ -196,12 +194,21 @@ section{
   margin-top: 10%;
   margin-left: 10%;
   width: 80%;
+  @media(max-width: $break-mobile){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
 }
 
 .section{
   width: 16.5vw;
   @media(max-width: $break-mobile){
     width: 46vw;
+    margin-bottom: 3vw;
   }
 }
 

@@ -18,6 +18,11 @@ button {
   &:hover{
     transform: scale(1.2);
   }
+  @media(max-width: $break-mobile){
+    height: 7dvh;
+    border-radius: 7vw;
+    border: 1vw solid $secondaryColor;
+  }
 }
 
 h6{
@@ -41,6 +46,9 @@ h6{
   width: 7.5vw;
   justify-content: center;
   align-items: center;
+  @media(max-width: $break-mobile){
+    width: 20vw;
+  }
 }
 
 .sunIcon{
@@ -58,6 +66,11 @@ h6{
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @media(max-width: $break-mobile){
+    width: 5vw;
+    height: 5vw;
+    margin: 2vw;
+  }
 }
 
 .circle{
@@ -69,6 +82,12 @@ h6{
   background-color: $secondaryColor;
   transition: transform 0.5s ease;
   transform: translate(0vw);
+  @media(max-width: $break-mobile){
+    width: 7vw;
+    height: 7vw;
+    margin: 1vw;
+    border-radius: 5vw;
+  }
 }
 
 .dark{
@@ -77,5 +96,8 @@ h6{
   .circle{
     transition: transform 0.5s ease;
     transform: translate(4vw);
+    @media(max-width: $break-mobile){
+      transform: translate(10vw);
+    }
   }
 }
