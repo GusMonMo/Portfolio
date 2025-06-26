@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');    
-$backgroundStrong: #30312F;
-$backgroundMedium: #323331;
-$backgroundWeak: #474749;
-$header:#FFF7D6;
-$primaryColor:#015B8F;
+$backgroundDarkStrong: hsl(90, 2%, 19%);
+$backgroundDarkMedium: #323331;
+$backgroundDarkWeak: #474749;
+
+$backgroundStrong: #ececdf;
+$backgroundMedium: #e2e1ce;
+$backgroundWeak: #faf9e0;
+
+
+$primaryColor: #015B8F;
 $secondaryColor: #00B2A4;
-$font-primary: 'Radley', serif;
+$fontPrimary: 'Radley', serif;
+$fontColor: black;
 
 // Break-points
 $break-mobile: 768px;

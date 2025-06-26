@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom"
-import Button from "../Components/Button"
-// import Project from "../Components/Project"
+import Button from "@/Components/SkillsButton/index"
+import ThemeButton from "@/Components/ThemeButton/index"
 import CssIcon from "../Assets/CssIcon.png"
 import ExpressIcon from "../Assets/ExpressIcon.png"
 import JavascriptIcon from "../Assets/JavaScriptIcon.png"
@@ -14,17 +13,9 @@ function App() {
 
   return (
     <>
-      <header>
-        <div className="headerSeparator"/>
-        <nav><Link to="/home"><h5>Inicio</h5></Link></nav>
-        <div className="headerSeparator"/>
-        <nav><a href="#aboutMe"><h5>Sobre Mim</h5></a></nav>
-        <div className="headerSeparator"/>
-        <nav><a href="#Projects"><h5>Meus Projetos</h5></a></nav>
-        <div className="headerSeparator"/>
-        <nav><Link to="/curriculo"><h5>Curriculo</h5></Link></nav>
-        <div className="headerSeparator"/>
-      </header>
+    <header>
+      <ThemeButton/>
+    </header>
       <div className="capa" id="inicio">
         <div className="background"/>
         <h2>Olá, seja bem vindo ao meu portfolio</h2>

@@ -1,5 +1,5 @@
 import React from  "react";
-import './_project.scss'
+import '../Styles/_project.scss'
 
 type props = {
     imgSrc?: string;

@@ -1,0 +1,24 @@
+@use './variables' as *;
+
+:root{
+    --backgroundStrong: #{$backgroundStrong};
+    --backgroundMedium: #{$backgroundMedium};
+    --backgroundWeak: #{$backgroundWeak};
+}
+
+body.dark{
+    transition: background-color 0.5s ease;
+    background-color: #{$backgroundDarkStrong};
+    h1, h2, h3, h4, p {
+      color: white;
+      transition: color 0.5s ease;
+    }
+    .capa{
+        transition: background-color 0.5s ease;
+        background-color: $backgroundDarkWeak;
+    }
+    .background{
+        transition: opacity 0.5 ease;
+        opacity: 0.3;
+    }
+  }

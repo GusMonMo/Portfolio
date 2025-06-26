@@ -1,0 +1,81 @@
+@use '../../Styles/variables' as *;
+
+button {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width:max-content;
+  height: 3vw;
+  background-color: $backgroundWeak;
+  color: $fontColor;
+  border: 0.3vw solid $secondaryColor;
+  border-radius: 2vw;
+  cursor: pointer;
+  user-select: none;
+  margin: 2vw;
+  transition: background-color 0.5s, transform 0.3s;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+h6{
+  color: white;
+  font-family: $fontPrimary;
+  font-size: 1.5vw;
+  padding: 0.5vw;
+}
+.themeButton{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.track{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 7.5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.sunIcon{
+ background-image: url('../../Assets/SunIcon.png');
+}
+
+.moonIcon{
+  background-image: url('../../Assets/MoonIcon.png');
+}
+
+.sunIcon, .moonIcon{
+  width: 2vw;
+  height: 2vw;
+  margin: 1vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.circle{
+  position: absolute;
+  left: 0.5vw;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 2vw;
+  background-color: $secondaryColor;
+  transition: transform 0.5s ease;
+  transform: translate(0vw);
+}
+
+.dark{
+  transition: background-color 0.5s, transform 0.3s;
+  background-color: $backgroundDarkStrong;
+  .circle{
+    transition: transform 0.5s ease;
+    transform: translate(4vw);
+  }
+}
