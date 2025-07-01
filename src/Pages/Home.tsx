@@ -1,5 +1,4 @@
 import Button from "@/Components/SkillsButton/index"
-import ThemeButton from "@/Components/ThemeButton/index"
 import CssIcon from "../Assets/CssIcon.png"
 import ExpressIcon from "../Assets/ExpressIcon.png"
 import JavascriptIcon from "../Assets/JavaScriptIcon.png"
@@ -8,14 +7,12 @@ import ReactIcon from "../Assets/ReactIcon.png"
 import SassIcon from "../Assets/SassIcon.png"
 import NodeIcon from "../Assets/NodeIcon.png"
 import TypescriptIcon from "../Assets/TypeScriptIcon.png"
+import Project from "@/Components/Project/index"
 
 function App() {
 
   return (
     <>
-    <header>
-      <ThemeButton/>
-    </header>
       <div className="capa" id="inicio">
         <div className="background"/>
         <h2>Olá, seja bem vindo ao meu portfolio</h2>
@@ -65,7 +62,10 @@ function App() {
         <h2>VEJA ALGUNS DOS MEUS PROJETOS ABAIXO</h2>
         <div className="barra main"/>
         <div className="projContainer">
-          {/* <Project projName="Linktree" projLink="google.com" usedTechs={["React", "TypeScript", "Sass"]}/> */}
+          <Project projName="Linktree" 
+          projLink="google.com" 
+          usedTechs={["React", "TypeScript", "Sass"]}
+          />
         </div>
       </main>
     </>

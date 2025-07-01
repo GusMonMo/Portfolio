@@ -1,5 +1,5 @@
 import React from  "react";
-import '../Styles/_project.scss'
+import styles from './styles.module.scss'
 
 type props = {
     imgSrc?: string;
@@ -10,13 +10,13 @@ type props = {
 
 const Project: React.FC<props> = ({imgSrc, projName, usedTechs, projLink}) => {
     return(
-        <div className="projSpace">
-            <div className="imgCover">
+        <div className={styles.projSpace}>
+            <div className={styles.imgCover}>
                 <img src= {imgSrc} alt="Imagem" />
             </div>
-            <h2 className="projName">{projName}</h2>
+            <h2 className={styles.projName}>{projName}</h2>
             <h4>{usedTechs.join(', ')}</h4>
-            <a href={projLink}  target="_blank" rel="noopener noreferrer" className="projLink">Acessar Projeto</a>
+            <a href={projLink}  target="_blank" rel="noopener noreferrer" className={styles.projLink}>Acessar Projeto</a>
         </div>
     )
 }
