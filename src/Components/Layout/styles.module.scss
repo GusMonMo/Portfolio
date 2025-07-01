@@ -1,0 +1,23 @@
+@use '../../Styles/variables' as *;
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+Link{
+    text-decoration: none;
+}
+
+h6{
+    font-size: 1.5vw;
+    transition: transform 0.5s ease;
+    &:hover{
+        transform: scale(1.2);
+        color: $secondaryColor;
+    }
+}
