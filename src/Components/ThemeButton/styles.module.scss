@@ -11,6 +11,7 @@ button {
   color: $fontColor;
   border: 0.3vw solid $secondaryColor;
   border-radius: 2vw;
+  box-shadow: inset 0vw 0.2vw 0.6vw rgb(88, 88, 88);
   cursor: pointer;
   user-select: none;
   margin: 2vw;
@@ -58,6 +59,7 @@ h6{
 
 .moonIcon{
   background-image: url('../../Assets/MoonIcon.png');
+  opacity: 0;
 }
 
 .sunIcon, .moonIcon{
@@ -67,6 +69,7 @@ h6{
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: opacity 0.3s;
   @media(max-width: $break-mobile){
     width: 10vw;
     height: 10vw;
@@ -81,9 +84,11 @@ h6{
   height: 2.5vw;
   border-radius: 2vw;
   background-color: $secondaryColor;
+  box-shadow: 0vw 0.2vw 0.5vw rgb(88, 88, 88);
   transition: transform 0.5s ease;
   transform: translate(0vw);
   @media(max-width: $break-mobile){
+    box-shadow: -0.5vw 1vw 2vw rgb(88, 88, 88);
     width: 10vw;
     height: 10vw;
     margin: 1.9vw;
@@ -95,11 +100,20 @@ h6{
 .dark{
   transition: background-color 0.5s, transform 0.3s;
   background-color: $backgroundDarkStrong;
+  .button{
+    box-shadow: inset 0vw 1vw 0vw rgb(0, 0, 0);
+  }
   .circle{
     transition: transform 0.5s ease;
     transform: translate(4vw);
     @media(max-width: $break-mobile){
       transform: translate(10vw);
     }
+  }
+  .sunIcon{
+    opacity: 0;
+  }
+  .moonIcon{
+    opacity: 1;
   }
 }
