@@ -7,7 +7,8 @@ import ReactIcon from "../Assets/ReactIcon.png"
 import SassIcon from "../Assets/SassIcon.png"
 import NodeIcon from "../Assets/NodeIcon.png"
 import TypescriptIcon from "../Assets/TypeScriptIcon.png"
-// import Project from "@/Components/Project/index"
+import Project from "@/Components/Project/index"
+import Fintracker from '../Assets/ProjImages/logo.png'
 
 function App() {
 
@@ -62,10 +63,12 @@ function App() {
         <h2>VEJA ALGUNS DOS MEUS PROJETOS ABAIXO</h2>
         <div className="barra main"/>
         <div className="projContainer">
-          {/* <Project projName="Linktree" 
-          projLink="google.com" 
+          <Project projName="Fintracker"
+          imgSrc= {Fintracker} 
+          projLink="https://dashboard-coral-one-90.vercel.app/" 
           usedTechs={["React", "TypeScript", "Sass"]}
-          /> */}
+          description=""
+          /> 
         </div>
       </main>
     </>

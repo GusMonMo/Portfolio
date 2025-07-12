@@ -3,8 +3,7 @@
 .projSpace{
     margin-top: 5vw;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
      @media (max-width: $break-mobile) {
@@ -12,6 +11,13 @@
         flex-direction: row;
         gap: 3vw;
     }
+}
+
+.projInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgCover{
@@ -24,6 +30,22 @@
     background-color: $backgroundWeak;
     border-radius: 20%;
     border-color: $primaryColor;
+    transition: transform 0.5s ease;
+    &:hover{
+        transform: scale(1.2);
+    }
+    @media (max-width: $break-mobile) {
+        width: 40vw;
+        height: 35vw;
+    }
+}
+
+.image{
+    width: 25vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     @media (max-width: $break-mobile) {
         width: 40vw;
         height: 35vw;
@@ -40,6 +62,14 @@
 
 .projLink{
     color: $secondaryColor;
+    transition: transform 0.5s ease;
+    &:hover{
+        transform: scale(1.2);
+        
+    }
+    @media (max-width: $break-mobile) {
+        font-size: 7vw;
+    }
 }
 h4, .projLink{
     font-size: 1.5vw;
