@@ -2,22 +2,52 @@
 
 .projSpace{
     margin-top: 5vw;
+    width: 80vw;
+    height: 40vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-bottom: 2vw;
      @media (max-width: $break-mobile) {
-        margin-top: 10vw;
-        flex-direction: row;
-        gap: 3vw;
+        height: max-content;
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+        margin-bottom: 2vh;
     }
 }
 
 .projInfo{
+    width: 40vw;
+    height: 35vw;
     display: flex;
+    gap: 2vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: $break-mobile) {
+        flex-direction: column;
+        justify-content: start;
+        gap: 3vh;
+        height: max-content;
+        width: 80vw;
+    }
+}
+
+.descriptionSpace{
+    display: flex;
+    padding: 2vw;
+    justify-content: start;
+    width: 40vw;
+    height: 35vw;
+    border: 0.2vw solid $backgroundDarkStrong;
+    border-radius: 10%;
+    @media (max-width: $break-mobile) {
+        padding: 3vh;
+        height: max-content;
+        width: 75vw;
+    }
 }
 
 .imgCover{
@@ -53,7 +83,6 @@
 }
 
 .projName{
-    color: white;
     font-size: 3vw;
      @media (max-width: $break-mobile) {
         font-size: 7vw;
@@ -76,4 +105,17 @@ h4, .projLink{
      @media (max-width: $break-mobile) {
         font-size: 5vw;
     }
+}
+
+.projBar{
+height: 0.2vw;
+background-color: $primaryColor;
+width: 80vw;
+@media (max-width: $break-mobile) {
+    height: 0.5vh;
+  }
+}
+
+.dark{
+    border: 0.2vw solid $backgroundStrong;
 }

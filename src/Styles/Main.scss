@@ -168,8 +168,7 @@ p{
 height: 0.2vw;
 background-color: $primaryColor;
 @media (max-width: $break-mobile) {
-    height: 1vw;
-    
+    height: 0.5vh;
   }
 }
 
@@ -250,10 +249,9 @@ main{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 3vw;
-  margin-bottom: 5vw;
   @media (max-width: $break-mobile) {
     flex-direction: column;
     gap: 5vw;

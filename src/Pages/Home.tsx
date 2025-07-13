@@ -67,8 +67,13 @@ function App() {
           imgSrc= {Fintracker} 
           projLink="https://dashboard-coral-one-90.vercel.app/" 
           usedTechs={["React", "TypeScript", "Sass"]}
-          description=""
-          /> 
+          description="Fintracker é um projeto pessoal de um controlador financeiro com autenticação local. 
+          A aplicação consiste em uma página de registro que armazena os dados do formulário no localStorage e 
+          define um token de autenticação. Os dados financeiros do usuário são criados e modificados com base 
+          nesse token. Este método é adequado para dados não confidenciais e não possui conexão com um 
+          banco de dados, tornando a aplicação fácil e leve. Os dados são totalmente excluídos se o cache do 
+          navegador for limpo."
+          />
         </div>
       </main>
     </>
