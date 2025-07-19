@@ -1,8 +1,33 @@
-.curriculumBody{
-display: flex;
-flex-direction: column;
-position: relative;
+@use '../../Styles/variables' as *;
+
+
+.curriculumBody, section{
+    margin: 0;
+    padding: 0;
 }
-.curriculumBody > h1{
-    align-self: center;
+
+.bar{
+    height: 0.2vw;
+    background-color: $primaryColor;
+    width: 80vw;
+}
+
+.curriculumBody{
+    margin-top: 2vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1vw;
+}
+
+h1{
+    font-size: 4vw;
 }

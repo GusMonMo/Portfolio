@@ -4,8 +4,11 @@ function Curriculo() {
     return(
         <>
         <main className={styles.curriculumBody}>
-        <h1>Ainda estou construindo essa página, espere um pouquinho por favor</h1>
-            <h2></h2>
+            <section className={styles.overview}>
+                <h1>Gustavo Monteiro</h1>
+                <h2>Desenvolvedor web</h2>
+                <div className={styles.bar}/>
+            </section>
         </main>
         </>
     )
