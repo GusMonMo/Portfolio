@@ -25,9 +25,9 @@ function App() {
           <a href="https://github.com/GusMonMo" target="_blank" rel="noopener noreferrer">
             <img src="/Assets/GithubIcon.png" alt="Github" className="icon"/>
           </a>
-           <a href="https://www.instagram.com/gusta.m_m/" target="_blank" rel="noopener noreferrer">
+           {/* <a href="https://www.instagram.com/gusta.m_m/" target="_blank" rel="noopener noreferrer">
             <img src="/Assets/IconInstagram.png" alt="Instagram" className="icon"/>
-          </a>
+          </a> */}
            <a href="https://www.linkedin.com/in/devgus/" target="_blank" rel="noopener noreferrer">
             <img src="/Assets/LinkedinIcon.png" alt="Linkedin" className="icon"/>
           </a>
@@ -71,13 +71,12 @@ function App() {
             <Project projName="Fintracker"
             imgSrc= {Fintracker} 
             projLink="https://dashboard-coral-one-90.vercel.app/" 
-            usedTechs={["React", "TypeScript", "Sass"]}
-            description="Fintracker é um projeto pessoal de um controlador financeiro com autenticação local. 
+            usedTechs={["React", "TypeScript", "Sass", "Vite"]}
+            usedLibs={["FramerMotion", "Recharts"]}
+            description="Fintracker é um projeto pessoal de um controlador e projeção financeira com autenticação local. 
             A aplicação consiste em uma página de registro que armazena os dados do formulário no localStorage e 
             define um token de autenticação. Os dados financeiros do usuário são criados e modificados com base 
-            nesse token. Este método é adequado para dados não confidenciais e não possui conexão com um 
-            banco de dados, tornando a aplicação fácil e leve. Os dados são totalmente excluídos se o cache do 
-            navegador for limpo."
+            nesse token. O projeto visa facilitar os calculos e projeções financeiras futuras."
             />
           </div>
         </main>
